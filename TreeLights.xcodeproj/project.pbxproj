@@ -12,7 +12,6 @@
 		4E2242221A259D87003AC27D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2242211A259D87003AC27D /* ViewController.m */; };
 		4E2242251A259D87003AC27D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E2242231A259D87003AC27D /* Main.storyboard */; };
 		4E2242271A259D87003AC27D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E2242261A259D87003AC27D /* Images.xcassets */; };
-		4E22422A1A259D87003AC27D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E2242281A259D87003AC27D /* LaunchScreen.xib */; };
 		4E2242361A259D87003AC27D /* TreeLightsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2242351A259D87003AC27D /* TreeLightsTests.m */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +35,6 @@
 		4E2242211A259D87003AC27D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4E2242241A259D87003AC27D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E2242261A259D87003AC27D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4E2242291A259D87003AC27D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4E22422F1A259D87003AC27D /* TreeLightsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreeLightsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E2242341A259D87003AC27D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E2242351A259D87003AC27D /* TreeLightsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TreeLightsTests.m; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 				4E2242211A259D87003AC27D /* ViewController.m */,
 				4E2242231A259D87003AC27D /* Main.storyboard */,
 				4E2242261A259D87003AC27D /* Images.xcassets */,
-				4E2242281A259D87003AC27D /* LaunchScreen.xib */,
 				4E2242191A259D87003AC27D /* Supporting Files */,
 			);
 			path = TreeLights;
@@ -201,7 +198,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E2242251A259D87003AC27D /* Main.storyboard in Resources */,
-				4E22422A1A259D87003AC27D /* LaunchScreen.xib in Resources */,
 				4E2242271A259D87003AC27D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,14 +249,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		4E2242281A259D87003AC27D /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4E2242291A259D87003AC27D /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -298,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -334,7 +322,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -346,12 +334,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TreeLights/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -359,12 +350,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TreeLights/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
